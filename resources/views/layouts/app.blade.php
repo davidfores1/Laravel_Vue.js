@@ -26,6 +26,9 @@
     <!-- Toastr -->
     <link href="{{ asset('libreria/toastr/toastr.scss') }}" rel="stylesheet" />
     <script src="{{ asset('libreria/toastr/toastr.js') }}"></script>
+    
+    <!-- sweetAlert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
