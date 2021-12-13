@@ -35,7 +35,13 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $datos = new Employee;
+
+        $datos->name = $request->name;
+        $datos->profession = $request->profession;
+        $datos->salary = $request->salary;
+        $datos->save();
+        return "Datos guardados correctamente";
     }
 
     /**

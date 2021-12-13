@@ -13,8 +13,9 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                     
-                    @{{ message }}
+
+                    <button type="button" class="btn btn-primary float-right" @click="nuevoDato()">Nuevo</button>
+                    <br><br>
                     <table class="table">
                         <thead>
                             <tr>
@@ -31,7 +32,10 @@
                                 <td>@{{ dato.name }}</td>
                                 <td>@{{ dato.profession }}</td>
                                 <td>@{{ dato.salary }}</td>
-                                <td>@mdo</td>
+                                <td>
+                                    <button type="button" class="btn btn-info">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

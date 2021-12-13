@@ -28,7 +28,7 @@
     <script src="{{ asset('libreria/toastr/toastr.js') }}"></script>
     
     <!-- sweetAlert2 -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
