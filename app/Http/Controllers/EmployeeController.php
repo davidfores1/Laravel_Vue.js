@@ -41,7 +41,7 @@ class EmployeeController extends Controller
         $datos->profession = $request->profession;
         $datos->salary = $request->salary;
         $datos->save();
-        return "Datos guardados correctamente";
+        return "Datos guardados correctamente!";
     }
 
     /**
@@ -73,9 +73,13 @@ class EmployeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Employee $employee)
     {
-        //
+        $employee->name = $request->name;
+        $employee->profession = $request->profession;
+        $employee->salary = $request->salary;
+        $employee->save();
+        return "Datos editados correctamente!";
     }
 
     /**
@@ -84,8 +88,9 @@ class EmployeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Employee $employee)
     {
-        //
+      $employee->delete();
+      return 'Registro eliminado correctamente!';
     }
 }

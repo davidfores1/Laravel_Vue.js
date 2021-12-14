@@ -31,7 +31,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- development version, includes helpful console warnings -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
@@ -96,7 +96,7 @@
     </div>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/vue.js') }}" defer></script>
+        <script src="{{ asset('js/vue.js') }}"></script>
 </body>
 
 </html>

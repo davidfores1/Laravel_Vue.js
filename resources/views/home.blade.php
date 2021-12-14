@@ -33,8 +33,8 @@
                                 <td>@{{ dato.profession }}</td>
                                 <td>@{{ dato.salary }}</td>
                                 <td>
-                                    <button type="button" class="btn btn-info">Editar</button>
-                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                    <button type="button" class="btn btn-info" @click="editarDatos(dato)">Editar</button>
+                                    <button type="button" class="btn btn-danger" @click=" eliminarDatos(dato)">Eliminar</button>
                                 </td>
                             </tr>
                         </tbody>
